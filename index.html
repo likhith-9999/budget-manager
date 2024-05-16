@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="input">
+            <div class="budget-input">
+                <p>Budget</p>
+                <input type="number" id="budget-value" placeholder="Enter Total Amount"  onkeydown="if(event.key == 'Enter') {setBudget()}">
+                <button onclick="setBudget()">Set Budget</button>
+            </div>
+
+            <div class="expenses-input">
+                <p>Expenses</p>
+                <input type="Text" id="productName" placeholder="Enter Title of the Product">
+                <input type="number" id="productCost" placeholder="Enter Cost of Product"  onkeydown="if(event.key == 'Enter') {setExpenses()}">
+                <button onclick="setExpenses()">Check Amount</button>
+            </div>
+        </div>
+
+
+        <div class="output">
+            <div class="count-bar">
+                <div>
+                    <p>Total Budget</p>
+                    <p id="totalBudget">0</p>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <p id="expensesAmount">0</p>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <p id="balanceAmount">0</p>
+                </div>
+            </div>
+
+            <div class="expenses-list">
+                <p>Expenses List</p>
+
+                <div id="itemlist">
+                    <!-- <div class="item">
+                        <p>Groceries</p>
+                        <p>800</p>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+
+                    <div class="item">
+                        <p>Grocerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrries</p>
+                        <p>800</p>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

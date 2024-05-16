@@ -1,0 +1,150 @@
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.budget-input {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.budget-input p, .budget-input input {
+    margin-bottom: 15px;
+}
+
+.expenses-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    width: 48%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.count-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #587ef4;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.count-bar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.expenses-list {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.expenses-list > p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+button {
+    background-color: #587ef4;
+    outline: none;
+    color: white;
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline-color: gray;
+    height: 40px;
+    padding: 10px;
+    font-size: medium;
+}
+
+
+button:active {
+    background-color: #1b50f1;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 20px;
+    border-left: 5px solid #587ef4;
+    margin-bottom: 20px;
+}
+
+.item p:first-child {
+    width: 200px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+i {
+    color: #587ef4;
+    cursor: pointer;
+}
+
+i:active {
+    color: #1b50f1;
+}
